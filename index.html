@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>bright1investor</title>
   <style>
-   h2{color:deeppink}
-   .color{color:blue}
-   body{text-align: center;}
-   .footer ol{text-align: center; list-style:none;}
-   .footer ol,li{display: inline;}  
-  </style>
+  a{color: green;
+    text-decoration: none; }
+  h1{font-size: 35px;
+     text-align: center;
+     letter-spacing: 3px }
+  .grid{border:5px none;
+       width:50%;
+       display: grid;
+       grid-template-columns: auto auto auto ;
+       margin: auto;
+       padding: 15px;
+       text-align: center;
+       font-size:25px;  }
+  p{padding: 15px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 25px; }
+  #stock{text-align: center;
+         color:skyblue;
+         font-size:20px;
+         line-height: 50px;}
+  hr{display: block;
+       margin-top: 0.5em;
+       margin-bottom: 0.5em;
+       margin-left: auto;
+       margin-right: auto;
+       border-style: inset;
+       border-width: 2px;
+       border-color: hotpink; }
+  #invest{text-align: center;
+              color:skyblue;
+              font-size:20px;
+              line-height: 50px;}
+ </style>
 </head>
 <body>
- <header>
-	<h1><a href="index.html">Stock Investment Analysis</a></h1>
-  <img src="china.jpg">
- </header>
-  <div class="footer">
-     <ol>
-      <li class="color"><a href="page_ho.html">Hongkong EX</a></li>
-      <li class="color"><a href="page_sa.html">Shanghai SE</a></li>
-      <li class="color"><a href="page_ny.html">NYSE</a></li>
-    </ol>
+	<h1 style="background-color:pink;"><a href="index.html" title="빛광">빛나는투자광</a></h1>
+  <hr>
+  <div id="stock">[중국주식]</div>
+  <div class="grid">
+    <a href="page_ho.html" title="Hongkong EX">홍콩시장</a>
+    <a href="page_sa.html" title="Shanghai SE">상하이시장</a>
+    <a href="page_ny.html" title="NYSE">뉴욕시장</a>
   </div>
- <h2>Chinese company</h2>
- <P>Most people think investment is exciting.<br>
-    however, it's not supposed to be exciting.<br>
-    If investment is too exciting,<br>
-    you may be deluding yourself that you're investing,<br>
-    but in reality you're speculating.<br>
-    You may think you are making a right decision.<br>
-    However, economic freedom does not come without a price.
+ <P>투자는 원래 지루하고 재미없다.<br>
+재미있다면,<br> 투기하면서 투자한다고 착각하는 것이다.<br>
+착각은 자유지만,<br> 경제적 자유는 오지 않을 것이다.<br>
+ <div id="invest">[투자]</div>
+ <div class="grid">
+   <a href="page_china">중국투자</a>
+   <a href="page_story">이야기</a>
+   <a href="page_book">책</a>
+ </div>
  </p>
- <p>
-   <div id="disqus_thread"></div>
-   <script>
-
-   /**
-   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-   /*
-   var disqus_config = function () {
-   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-   };
-   */
-   (function() { // DON'T EDIT BELOW THIS LINE
-   var d = document, s = d.createElement('script');
-   s.src = 'https://china-3.disqus.com/embed.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-   </script>
-   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-  </p>
 </body>
 </html>
